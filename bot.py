@@ -62,13 +62,13 @@ def identification(id):
         if u["id"] == id:
             user = u
     #袩褉芯胁械褉褟械屑 锌芯谢褜蟹芯胁邪褌械谢褟 薪邪 薪邪褏芯卸写械薪懈械 胁 褋锌懈褋泻械 斜芯褌邪
-    
-    if user == None:
+
+    if user is None:
         #袧芯胁褘泄 锌芯谢褜蟹芯胁邪褌械谢褜
         newArray = {'id': id, "extensions": {"chosenButton": "", "prank_id": 0}}
         users.append(newArray)
         user = users[-1]
-        
+
     return user
 
 @bot.message_handler(commands=commandSet)
